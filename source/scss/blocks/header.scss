@@ -91,24 +91,24 @@
 }
 
 .header__menu {
-  &--close {
-    display: none;
-
-    @media (min-width: $md) {
-      display: block;
-      columns: 2 150px;
-      padding: 17px 0 15px;
-      color: $black;
-      text-align: right;
-    }
-
-    @media (min-width: $xl) {
-      display: flex;
-      flex-wrap: wrap;
-      margin-left: 100px;
-      padding: 33px 0 32px;
-    }
+  @media (min-width: $md) {
+    display: block;
+    columns: 2 150px;
+    padding: 17px 0 15px;
+    color: $black;
+    text-align: right;
   }
+
+  @media (min-width: $xl) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 100px;
+    padding: 33px 0 32px;
+  }
+}
+
+.close-js {
+  display: none;
 }
 
 .header__menu-item {
@@ -123,6 +123,12 @@
 
   @media (min-width: $xl) {
     padding: 5px 23px;
+  }
+
+  &:last-child {
+    @media (min-width: $xl) {
+      padding-right: 0;
+    }
   }
 }
 
@@ -153,11 +159,5 @@
     &[href]:active {
       opacity: 0.3;
     }
-  }
-}
-
-.header__menu-item:last-child {
-  @media (min-width: $xl) {
-    padding-right: 0;
   }
 }
