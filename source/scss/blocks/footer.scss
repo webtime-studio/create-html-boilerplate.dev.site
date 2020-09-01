@@ -31,10 +31,10 @@
     display: flex;
     margin-bottom: auto;
   }
+}
 
-  .logo__text {
-    color: $white;
-  }
+.footer__logo .logo__text {
+  color: $white;
 }
 
 .footer__menu {
@@ -118,10 +118,6 @@
     margin-right: 10px;
   }
 
-  svg {
-    margin: auto;
-  }
-
   &:hover,
   &:focus {
     fill: $orange;
@@ -131,4 +127,8 @@
   &:active {
     opacity: 0.3;
   }
+}
+
+.footer__social-svg {
+  margin: auto;
 }

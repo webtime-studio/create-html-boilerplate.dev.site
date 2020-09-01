@@ -117,39 +117,13 @@
   color: $orange;
   text-decoration: underline $orange;
 
-  span {
-    display: block;
-    width: 280px;
-    height: 50px;
-    margin: 0 auto;
-    padding-top: 8px;
-    padding-left: 30px;
-    background-size: 32px 32px;
-    background-image: url("../../img/svg/download.svg");
-    background-repeat: no-repeat;
-    background-position: 0 5px;
-  }
-
   @media (min-width: $md) {
     margin: 19px 0 0 56px;
     font-size: 20px;
-
-    span {
-      width: 370px;
-      padding-left: 0;
-      background-size: 42px 42px;
-      background-position: 0 0;
-    }
   }
 
   @media (min-width: $xl) {
     font-size: 24px;
-
-    span {
-      width: 440px;
-      background-size: 42px 42px;
-      background-position: 0 0;
-    }
   }
 
   &:hover,
@@ -162,6 +136,31 @@
   }
 }
 
+.steps__download-text {
+  display: block;
+  width: 280px;
+  height: 50px;
+  margin: 0 auto;
+  padding-top: 8px;
+  padding-left: 30px;
+  background-size: 32px 32px;
+  background-image: url("../../img/svg/download.svg");
+  background-repeat: no-repeat;
+  background-position: 0 5px;
+
+  @media (min-width: $md) {
+    width: 370px;
+    padding-left: 0;
+    background-size: 42px 42px;
+    background-position: 0 0;
+  }
+
+  @media (min-width: $xl) {
+    width: 440px;
+    background-size: 42px 42px;
+    background-position: 0 0;
+  }
+}
 
 .steps__buttons {
   display: flex;

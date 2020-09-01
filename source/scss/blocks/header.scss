@@ -26,10 +26,10 @@
 
 .header__logo {
   float: left;
+}
 
-  span {
-    color: $orange;
-  }
+.header__logo .logo__version {
+  color: $orange;
 }
 
 .header__button {
