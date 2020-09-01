@@ -7,11 +7,9 @@ const screenWidth = document.body.clientWidth;
 
 const onButtonClick = () => {
   mobileMenuButton.classList.toggle('header__button--open');
-  headerMenu.classList.toggle('close-js');
+  headerMenu.classList.toggle('header__menu--close');
 };
 
-if (screenWidth < TABLET_WIDTH) {
-  mobileMenuButton.classList.add('header__button--open');
-  headerMenu.classList.add('close-js');
-  mobileMenuButton.addEventListener('click', onButtonClick);
-}
+mobileMenuButton.classList.add('header__button--open');
+headerMenu.classList.add('header__menu--close');
+mobileMenuButton.addEventListener('click', onButtonClick);
