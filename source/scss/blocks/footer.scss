@@ -85,6 +85,20 @@
   text-align: center;
 }
 
+.footer__webtime-studio-link,
+.footer__netlity-link {
+  color: $white;
+
+  &:hover,
+  &:focus {
+    color: $orange;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
 .footer__social {
   display: flex;
   justify-content: center;
@@ -117,5 +131,4 @@
   &:active {
     opacity: 0.3;
   }
-
 }
