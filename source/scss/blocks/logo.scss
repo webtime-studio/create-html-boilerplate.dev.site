@@ -5,6 +5,10 @@
   width: 220px;
 
   @media (min-width: $md) {
+    width: 280px;
+  }
+
+  @media (min-width: $xl) {
     width: 320px;
   }
 

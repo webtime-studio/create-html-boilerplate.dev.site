@@ -9,13 +9,11 @@
   padding: 34px 20px 38px;
 
   @media (min-width: $md) {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding: 60px;
   }
 
   @media (min-width: $xl) {
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding: 80px;
   }
 }
 
@@ -57,9 +55,13 @@
   justify-content: center;
 }
 
+.intro__button {
+  margin: 20px 15px 0;
+  border: 2px solid $white;
+}
+
 .intro__button--docs {
   color: $white;
-  border: 2px solid $white;
 
   &:hover,
   &:focus {

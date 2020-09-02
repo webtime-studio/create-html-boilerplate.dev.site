@@ -3,7 +3,7 @@
 }
 
 .steps__content-wrapper {
-  width: 85%;
+  width: 80%;
   margin: 0 auto;
   padding-top: 30px;
   padding-bottom: 40px;
@@ -172,6 +172,10 @@
   }
 }
 
+.steps__button {
+  margin: 20px 15px 0;
+}
+
 .steps__button--docs {
   color: $orange;
   background-color: $gray;
@@ -187,6 +191,7 @@
 .steps__button--start {
   color: $white;
   background-color: $orange;
+  border: 2px solid $white;
 
   &:hover,
   &:focus {
