@@ -1,10 +1,5 @@
 .intro {
   background-color: $orange;
-  border-top: 1px solid $white;
-
-  @media (min-width: $md) {
-    border: 0 none;
-  }
 }
 
 .intro__content-wrapper {
