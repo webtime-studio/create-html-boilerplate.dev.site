@@ -1,19 +1,182 @@
 .header {
+  position: sticky;
+  top: 0;
   background-color: $white;
-  margin: 0;
+  box-shadow: 0 3px 0 0 rgba(204, 88, 3, 0.1);
+
+  @media (min-width: $xl) {
+    padding: 10px;
+  }
 }
 
-.nav {
-  background-color: $gray;
-  display: flex;
-  justify-content: center;
+.header__navigation {
+  margin: 0 auto;
+  background-color: $white;
+
+  @media (min-width: $xl) {
+    width: 90%;
+    max-width: 1160px;
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
-.nav__logo {
-  align-items: center;
+.header__navigation-wrapper {
   display: flex;
+  justify-content: space-between;
+  width: 90%;
+  min-width: 280px;
+  margin: 0 auto;
+  padding: 10px;
 
-  img {
-    width: 100px;
+  @media (min-width: $xl) {
+    width: auto;
+    margin: 0;
+  }
+}
+
+.header__logo .logo__version {
+  color: $orange;
+}
+
+.header__button {
+  position: relative;
+  display: flex;
+  width: 50px;
+  height: 50px;
+  margin: auto 0;
+  padding: 0;
+  background-color: $white;
+  border: 0 none;
+  cursor: pointer;
+
+  @media (min-width: $md) {
+    width: 60px;
+    height: 60px;
+  }
+
+  @media (min-width: $xl) {
+    display: none;
+  }
+
+  &::before,
+  &::after {
+    position: absolute;
+    content: "";
+    top: 23px;
+    left: 10px;
+    height: 3px;
+    width: 30px;
+    background-color: $orange;
+
+    @media (min-width: $md) {
+      top: 28px;
+      left: 15px;
+    }
+  }
+
+  &::before {
+    transform: rotate(45deg)
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &--open::after {
+    position: absolute;
+    content: "";
+    top: 14px;
+    left: 10px;
+    width: 30px;
+    height: 3px;
+    background-color: $orange;
+    box-shadow:
+      0 8px 0 0 $orange,
+      0 17px 0 0 $orange;
+    transform: none;
+
+    @media (min-width: $md) {
+      top: 20px;
+      left: 15px;
+    }
+  }
+
+  &--open::before {
+    display: none;
+  }
+}
+
+.header__menu {
+  position: absolute;
+  right: 1px;
+  width: 300px;
+  background-color: $white;
+
+  @media (min-width: $xl) {
+    position: static;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    width: auto;
+    padding: 23px 0 22px 100px;
+  }
+
+  &--close {
+    @media (max-width: $xl - 1px) {
+      display: none;
+    }
+  }
+}
+
+.header__menu-item {
+  display: block;
+  padding: 0;
+
+  @media (min-width: $xl) {
+    margin: 5px 0 5px 46px;
+  }
+}
+
+.header__menu-link {
+  display: block;
+  padding: 15px;
+  font-weight: 600;
+  text-align: center;
+  color: $black;
+  box-shadow: inset 0 2px 0 0 rgba(204, 88, 3, 0.1);
+
+  &[href]:hover,
+  &:focus {
+    color: $orange;
+  }
+
+  &[href]:active {
+    color: $white;
+    background-color: $orange;
+    box-shadow: inset 0 0 0 2px $white;
+  }
+
+  @media (min-width: $xl) {
+    display: inline;
+    padding: 0;
+    text-align: left;
+    box-shadow: none;
+
+    &[href]:hover,
+    &:focus {
+      color: $orange;
+      background-color: $white;
+      border: 0 none;
+      box-shadow: 0 2px 0 0 $orange;
+    }
+
+    &[href]:active {
+      opacity: 0.3;
+    }
   }
 }
