@@ -175,28 +175,3 @@
 .steps__button {
   margin: 20px 15px 0;
 }
-
-.steps__button--docs {
-  color: $orange;
-  background-color: $gray;
-  border: 2px solid $orange;
-
-  &:hover,
-  &:focus {
-    color: $white;
-    background-color: $orange;
-  }
-}
-
-.steps__button--start {
-  color: $white;
-  background-color: $orange;
-  border: 2px solid $white;
-
-  &:hover,
-  &:focus {
-    color: $orange;
-    background-color: $gray;
-    border: 2px solid $orange;
-  }
-}
