@@ -7,6 +7,13 @@
 
   @media (min-width: $xl) {
     padding: 10px;
+    transition: 0.4s;
+  }
+
+  &--scrolled {
+    @media (min-width: $xl) {
+      padding: 0px;
+    }
   }
 }
 
