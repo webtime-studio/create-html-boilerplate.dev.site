@@ -62,7 +62,7 @@
   color: $white;
 
   &[href]:hover,
-  &:focus {
+  &[href]:focus {
     color: $orange;
     box-shadow: 0 2px 0 0 $orange;
   }
