@@ -12,8 +12,8 @@
     color: $black;
     opacity: 0.3;
   }
-}
 
-.filter__link--current {
-  color: $black;
+  &--current {
+    color: $black;
+  }
 }

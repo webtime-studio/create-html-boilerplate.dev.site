@@ -12,21 +12,19 @@
   }
 }
 
-.post__title {
-  font-size: 24px;
-  font-weight: 700;
-  line-height: 33px;
-}
-
 .posts__filters {
   display: flex;
   flex-wrap: wrap;
-  margin: 39px auto 15px;
-
+  justify-content: center;
+  margin: 39px 0px 15px;
 }
 
 .posts__filter:not(:last-child) {
   margin-right: 30px;
+}
+
+.posts__list {
+  margin-top: 39px;
 }
 
 .posts__item {
