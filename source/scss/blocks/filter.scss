@@ -1,0 +1,19 @@
+.filter__link {
+  font-weight: 600;
+  color: $orange;
+
+  &[href]:hover,
+  &[href]:focus {
+    color: $black;
+    opacity: 0.6;
+  }
+
+  &[href]:active {
+    color: $black;
+    opacity: 0.3;
+  }
+
+  &--current {
+    color: $black;
+  }
+}

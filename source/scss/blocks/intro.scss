@@ -1,6 +1,10 @@
 .intro {
   padding-top: 100px;
   background-color: $orange;
+
+  &--blog {
+    background-color: $gray;
+  }
 }
 
 .intro__content-wrapper {
@@ -16,6 +20,16 @@
   @media (min-width: $xl) {
     padding: 80px;
   }
+
+  &--blog {
+    @media (max-width: $xl - 1) {
+      padding-top: 34px;
+    }
+
+    @media (min-width: $md) {
+      padding-bottom: 24px;
+    }
+  }
 }
 
 .intro__title {
@@ -26,6 +40,11 @@
   font-weight: 800;
   color: $white;
   text-align: center;
+
+  &--blog {
+    font-weight: 700;
+    color: $black;
+  }
 
   @media (min-width: $md) {
     width: 605px;
@@ -41,6 +60,10 @@
   font-size: 20px;
   color: $white;
   text-align: center;
+
+  &--blog {
+    color: $black;
+  }
 
   @media (min-width: $md) {
     max-width: 460px;
