@@ -3,7 +3,7 @@
   "localized-strings": {
     "next": "Next",
     "previous": "Previous",
-    "tagline": "A website for testing",
+    "tagline": "Создайте свой новый веб-проект одним нажатием.",
     "docs": {
       "how-to-start": {
         "title": "С чего начать",
@@ -13,10 +13,10 @@
     "links": {
       "Документация": "Документация",
       "Help": "Help",
-      "Blog": "Blog"
+      "Блог": "Блог"
     },
     "categories": {
-      "Docusaurus": "Docusaurus"
+      "С чего начать": "С чего начать"
     }
   },
   "pages-strings": {

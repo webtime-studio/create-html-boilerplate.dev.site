@@ -10,19 +10,28 @@
 
 // List of projects/orgs using your project for the users page.
 const users = [
-  {
-    caption: 'User1',
-    // You will need to prepend the image path with your baseUrl
-    // if it is not '/', like: '/test-site/img/image.jpg'.
-    image: '/img/undraw_open_source.svg',
-    infoLink: 'https://www.facebook.com',
-    pinned: true,
-  },
+  // {
+  //   caption: 'Павел Клочков',
+  //   // You will need to prepend the image path with your baseUrl
+  //   // if it is not '/', like: '/test-site/img/image.jpg'.
+  //   image: 'https://ckomop0x.me/images/apple-icon.png',
+  //   infoLink: 'https://www.facebook.com/ckomop0x',
+  //   pinned: true,
+  // },
+  // {
+  //   caption: 'Кристина Кузьменко',
+  //   // You will need to prepend the image path with your baseUrl
+  //   // if it is not '/', like: '/test-site/img/image.jpg'.
+  //   image:
+  //     'https://scontent-ams4-1.xx.fbcdn.net/v/t1.0-9/36357140_1576597839118460_2556038744129929216_n.jpg?_nc_cat=110&_nc_sid=09cbfe&_nc_ohc=5M-4J7lt9-4AX8fjuKz&_nc_ht=scontent-ams4-1.xx&oh=18e2cf56ab8be88c7e4b1135d09787c1&oe=5F8B2542',
+  //   infoLink: 'https://www.facebook.com/tiny.kuzmenko',
+  //   pinned: true,
+  // },
 ];
 
 const siteConfig = {
-  title: 'Test Site', // Title for your website.
-  tagline: 'A website for testing',
+  title: 'Create HTML Boilerplate', // Title for your website.
+  tagline: 'Создайте свой новый веб-проект одним нажатием.',
   url: 'https://create-html-boilerplate.dev/', // Your website URL
   baseUrl: '/', // Base URL for your project */
   // For github.io type URLs, you would set the url and baseUrl like:
@@ -30,17 +39,17 @@ const siteConfig = {
   //   baseUrl: '/test-site/',
 
   // Used for publishing and more
-  projectName: '',
-  organizationName: 'Webtime.Studio',
+  projectName: 'create-html-boilerplate',
+  organizationName: 'webtime-studio',
   // For top-level user or org sites, the organization is still the same.
   // e.g., for the https://JoelMarcey.github.io site, it would be set like...
   //   organizationName: 'JoelMarcey'
 
-  // For no header links in the top nav bar -> headerLinks: [],
+  // Ссылки в меню верхней навигации top nav bar -> headerLinks: [],
   headerLinks: [
     { doc: 'how-to-start', label: 'Документация' },
     { page: 'help', label: 'Help' },
-    { blog: true, label: 'Blog' },
+    { blog: true, label: 'Блог' },
   ],
 
   // If you have users set above, you add it here:
@@ -99,11 +108,16 @@ const siteConfig = {
   // enableUpdateBy: true,
 
   // Show documentation's last update time.
-  // enableUpdateTime: true,
+  enableUpdateTime: true,
 
   // You may provide arbitrary config keys to be used as needed by your
   // template. For example, if you need your repo's URL...
   // repoUrl: 'https://github.com/facebook/test-site',
+
+  defaultVersionShown: 'v1.1.0',
+  noIndex: false,
+  docsSideNavCollapsible: true,
+  scrollToTop: true,
 };
 
 module.exports = siteConfig;

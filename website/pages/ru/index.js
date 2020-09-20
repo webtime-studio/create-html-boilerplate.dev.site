@@ -14,8 +14,9 @@ const Container = CompLibrary.Container;
 const GridBlock = CompLibrary.GridBlock;
 
 class HomeSplash extends React.Component {
+
   render() {
-    const {siteConfig, language = ''} = this.props;
+    const {siteConfig, language = 'ru'} = this.props;
     const {baseUrl, docsUrl} = siteConfig;
     const docsPart = `${docsUrl ? `${docsUrl}/` : ''}`;
     const langPart = `${language ? `${language}/` : ''}`;
