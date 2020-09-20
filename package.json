@@ -1,51 +1,44 @@
 {
-  "name": "create-html-boilerplate",
-  "version": "1.0.1",
+  "name": "create-html-boilerplate-site",
+  "version": "1.0.0",
   "description": "create-html-boilerplate",
+  "private": true,
   "scripts": {
-    "stylelint": "stylelint \"source/scss/**/*.(scss|css)\"",
-    "eslint": "eslint \"source/js/**/*.js\"",
-    "test": "concurrently npm:stylelint npm:eslint",
-    "build": "webpack -p",
-    "prettier": "prettier --write \"source/(scss|js)/**/*.(scss|css|js|json)\"",
-    "start": "webpack-dev-server --open"
-  },
-  "engines": {
-    "node": "^10.16"
+    "docusaurus": "docusaurus",
+    "start": "docusaurus start",
+    "build": "docusaurus build",
+    "swizzle": "docusaurus swizzle",
+    "deploy": "docusaurus deploy",
+    "serve": "docusaurus serve"
   },
   "dependencies": {
-    "concurrently": "^5.3.0"
+    "@docusaurus/core": "2.0.0-alpha.64",
+    "@docusaurus/module-type-aliases": "^2.0.0-alpha.51",
+    "@docusaurus/preset-classic": "2.0.0-alpha.64",
+    "@mdx-js/react": "^1.5.8",
+    "@tsconfig/docusaurus": "^1.0.2",
+    "@types/react": "^16.9.49",
+    "@types/react-helmet": "^6.1.0",
+    "@types/react-router-dom": "^5.1.5",
+    "clsx": "^1.1.1",
+    "docusaurus-plugin-sass": "^0.1.10",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   },
   "devDependencies": {
-    "autoprefixer": "9.8.6",
-    "babel-loader": "8.1.0",
-    "clean-webpack-plugin": "^3.0.0",
-    "copy-webpack-plugin": "6.0.3",
-    "css-loader": "4.2.1",
-    "eslint": "^7.6.0",
-    "eslint-config-airbnb-base": "^14.2.0",
-    "eslint-config-prettier": "^6.11.0",
-    "eslint-plugin-import": "^2.22.0",
-    "eslint-plugin-prettier": "^3.1.4",
-    "html-webpack-plugin": "^4.3.0",
-    "imagemin-webp-webpack-plugin": "3.3.2",
-    "imagemin-webpack-plugin": "2.4.2",
-    "mini-css-extract-plugin": "0.9.0",
-    "node-sass": "4.14.1",
-    "optimize-css-assets-webpack-plugin": "5.0.3",
-    "postcss-loader": "3.0.0",
-    "prettier": "^2.0.5",
-    "raw-loader": "4.0.1",
-    "sass-loader": "9.0.3",
-    "stylelint": "13.6.1",
-    "stylelint-config-prettier": "^8.0.2",
-    "stylelint-config-recommended-scss": "^4.2.0",
-    "stylelint-config-standard": "^20.0.0",
-    "stylelint-prettier": "^1.1.2",
-    "stylelint-scss": "^3.18.0",
-    "terser-webpack-plugin": "4.1.0",
-    "webpack": "^4.44.1",
-    "webpack-cli": "3.3.12",
-    "webpack-dev-server": "3.11.0"
+    "babel-plugin-macros": "^2.8.0",
+    "babel-plugin-styled-components": "^1.11.1"
   }
 }
