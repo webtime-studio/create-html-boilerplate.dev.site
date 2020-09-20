@@ -4,17 +4,18 @@ import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import useBaseUrl from "@docusaurus/useBaseUrl";
 import clsx from "clsx";
 import styles from "./header.module.css";
+import { HeroBanner, Button } from "./styles";
 
 const Header: React.FC = () => {
   const context = useDocusaurusContext();
   const { siteConfig = {} } = context;
 
   return (
-    <header className={clsx("hero hero--primary", styles.heroBanner)}>
+    <HeroBanner className="hero hero--primary">
       <div className="container">
         <h1 className="hero__title">{siteConfig.title}</h1>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
-        <div className={styles.buttons}>
+        <Button>
           <Link
             className={clsx(
               "button button--outline button--secondary button--lg",
@@ -24,9 +25,9 @@ const Header: React.FC = () => {
           >
             Get Started
           </Link>
-        </div>
+        </Button>
       </div>
-    </header>
+    </HeroBanner>
   );
 };
 
