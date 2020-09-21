@@ -3,8 +3,14 @@ import clsx from "clsx";
 import useBaseUrl from "@docusaurus/useBaseUrl";
 import styles from "./feature.module.scss";
 
-const Feature = ({ imageUrl, title, description }) => {
-  const imgUrl = useBaseUrl(imageUrl);
+interface FeatureProps {
+  imageUrl: string;
+  title: string;
+  description: string;
+}
+
+const Feature: React.FC<FeatureProps> = ({ imageUrl, title, description }) => {
+  const imgUrl: string = useBaseUrl(imageUrl);
   return (
     <div className={clsx("col col--4", styles.feature)}>
       {imgUrl && (
