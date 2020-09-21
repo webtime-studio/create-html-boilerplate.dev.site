@@ -3,9 +3,9 @@ import Link from "@docusaurus/Link";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import useBaseUrl from "@docusaurus/useBaseUrl";
 import clsx from "clsx";
-import * as styles from "./header.module.scss";
+import styles from "./header.module.scss";
 
-const Header: React.FC = () => {
+const Header = () => {
   const context = useDocusaurusContext();
   const { siteConfig = {} } = context;
 
