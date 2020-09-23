@@ -1,33 +1,32 @@
 import React from "react";
 
-export const features = [
+export interface Feature {
+  title: string;
+  description: React.ReactNode;
+}
+
+export const features: Array<Feature> = [
   {
-    title: "Easy to Use",
-    imageUrl: "img/undraw_docusaurus_mountain.svg",
+    title: "Быстрый старт",
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Чтобы начать новый веб-проект, вам не нужно вручную настраивать сборку и тратить время на чтение документаций. Все работает &quot;из коробки&quot;.
       </>
     ),
   },
   {
-    title: "Focus on What Matters",
-    imageUrl: "img/undraw_docusaurus_tree.svg",
+    title: "Актуальные версии",
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Мы используем в сборке только проверенные технологии. Сборка регулярно обновляется, чтобы соответствовать стандартам современной веб-разработки и безопасности.
       </>
     ),
   },
   {
-    title: "Powered by React",
-    imageUrl: "img/undraw_docusaurus_react.svg",
+    title: "Открытый код",
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Наша сборка содержит полностью открытый исходный код, а это значит, что вы можете модифицировать ее под ваши нужды так, как вам будет угодно.
       </>
     ),
   },
