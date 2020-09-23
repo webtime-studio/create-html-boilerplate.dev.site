@@ -1,29 +1,33 @@
 module.exports = {
-  title: "My Site",
-  tagline: "The tagline of my site",
-  url: "https://your-docusaurus-test-site.com",
+  title: "Create HTML Boilerplate",
+  tagline: "Создайте свой новый веб-проект одним нажатием.",
+  url: "https://create-html-boilerplate.dev/",
   baseUrl: "/",
   onBrokenLinks: "throw",
   favicon: "img/favicon.ico",
-  organizationName: "webtime-studio", // Usually your GitHub org/user name.
-  projectName: "docusaurus", // Usually your repo name.
+  organizationName: "webtime-studio",
+  projectName: "create-html-boilerplate",
   themeConfig: {
     navbar: {
-      title: "My Site",
+      title: "Create HTML Boilerplate",
       logo: {
-        alt: "My Site Logo",
-        src: "img/logo.svg",
+        alt: "Create HTML Boilerplate",
+        src: "img/svg/logo.svg",
       },
       items: [
         {
           to: "docs/",
           activeBasePath: "docs",
-          label: "Docs",
-          position: "left",
+          label: "Документация",
+          position: "right",
         },
-        { to: "blog", label: "Blog", position: "left" },
         {
-          href: "https://github.com/facebook/docusaurus",
+          to: "blog",
+          label: "Блог",
+          position: "right"
+        },
+        {
+          href: "https://github.com/webtime-studio/create-html-boilerplate",
           label: "GitHub",
           position: "right",
         },
