@@ -1,6 +1,11 @@
 import React from "react";
 
-export const features = [
+export interface Feature {
+  title: string;
+  description: React.ReactNode;
+}
+
+export const features: Array<Feature> = [
   {
     title: "Быстрый старт",
     description: (
