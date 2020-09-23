@@ -1,11 +1,8 @@
 import React from "react";
-
-import Layout from "@theme/Layout";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
-import styles from "./styles.module.scss";
-
-import { Feature, Header } from "../components";
-import { features } from "../site-data/features";
+import Layout from "@theme/Layout";
+import { Features, Header, Steps, Buttons } from "../components";
+import "./style.scss";
 
 function IndexPage() {
   const context = useDocusaurusContext();
@@ -13,21 +10,14 @@ function IndexPage() {
   return (
     <Layout
       title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />"
+      description="Сборка Create HTML Boilerplate для верстки от Webtime.Studio"
     >
-      <Header />
+      <Header>
+        <Buttons left={'button--border-white header__button'} right={'button--background-white header__button'} />
+      </Header>
       <main>
-        {features?.length > 0 && (
-          <section className={styles.features}>
-            <div className="container">
-              <div className="row">
-                {features.map((props, idx) => (
-                  <Feature key={idx} {...props} />
-                ))}
-              </div>
-            </div>
-          </section>
-        )}
+        <Features />
+        <Steps />
       </main>
     </Layout>
   );
