@@ -1,16 +1,9 @@
 import React from "react";
-import Link from "@docusaurus/Link";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
-import useBaseUrl from "@docusaurus/useBaseUrl";
-import clsx from "clsx";
-import {Buttons} from "../../components";
+import Buttons from "../Buttons";
 import "./header.scss";
 
-interface HeaderProps {
-  children: React.ReactNode | null;
-}
-
-const Header: React.FC<HeaderProps> = ({children: buttons}) => {
+const Header: React.FC = () => {
   const context = useDocusaurusContext();
   const { siteConfig = {} } = context;
 
@@ -20,7 +13,7 @@ const Header: React.FC<HeaderProps> = ({children: buttons}) => {
         <h1 className="header__title">{siteConfig.title}</h1>
         <p className="header__slogan">{siteConfig.tagline}</p>
         <div className="header__buttons">
-          {buttons}
+          <Buttons left={'button--border-white header__button'} right={'button--background-white header__button'} />
         </div>
       </div>
     </header>
