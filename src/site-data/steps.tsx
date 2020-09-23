@@ -1,6 +1,11 @@
 import React from "react";
 
-export const steps = [
+export interface Step {
+  title: string;
+  description: React.ReactNode;
+}
+
+export const steps: Array<Step> = [
   {
     title: "Шаг 1.",
     description: (

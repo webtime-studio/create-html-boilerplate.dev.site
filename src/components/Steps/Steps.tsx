@@ -1,7 +1,7 @@
 import React from "react";
 import StepItem from "../StepItem"
 import Buttons from "../Buttons";
-import { steps } from "../../site-data/steps";
+import { steps, Step } from "../../site-data/steps";
 import "./steps.scss";
 
 const Steps: React.FC = () => (
@@ -11,9 +11,17 @@ const Steps: React.FC = () => (
 
             <div className="steps__description">
               <ul className="steps__list">
-                {steps.map((props, idx) => (
-                  <StepItem key={idx} {...props} />
-                ))}
+              {steps.map((
+                step: Step,
+                index: number) => {
+                const { title, description } = step;
+                return (
+                  <StepItem key={index} title={title}>
+                    {description}
+                  </StepItem>
+                  )
+                })
+              }
               </ul>
               <div className="steps__image-wrapper">
                 <img src="/img/gif/html-app-boilerplate.gif" className="steps__image" alt="Как пользоваться сборкой на ГитХабе" />

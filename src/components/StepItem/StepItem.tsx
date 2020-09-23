@@ -1,17 +1,16 @@
-import Buttons from "../Buttons";
 import React from "react";
 import { steps } from "../../site-data/steps";
 import "./step-item.scss";
 
 interface StepItemProps {
   title: string;
-  description: React.ReactNode;
+  children: React.ReactNode;
 }
 
-const StepItem: React.FC<StepItemProps> = ({ title, description }) => (
+const StepItem: React.FC<StepItemProps> = ({ title, children }) => (
     <li className="steps__item">
       <h3 className="steps__item-title">{title}</h3>
-      <p>{description}</p>
+      <p>{children}</p>
     </li>
   );
 
