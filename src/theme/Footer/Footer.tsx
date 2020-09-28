@@ -1,6 +1,6 @@
 import React from 'react';
-import { Logo, LinkItem } from '../../components';
-import { footerMenuLinks, FooterMenuLink, footerSocialLinks, FooterSocialLink, socialSVG } from '../../site-data/footer';
+import { Logo, LinkItem, SocialIcon } from '../../components';
+import { footerMenuLinks, FooterMenuLink, footerSocialLinks, FooterSocialLink } from '../../site-data/footer';
 import './footer.scss';
 
 const Footer: React.FC = () => (
@@ -41,11 +41,10 @@ const Footer: React.FC = () => (
           index: number,
         ) => <LinkItem
             key={index}
-            className={`footer__social-link footer__social-link--${socialLink.className}`}
-            href={socialLink.href}
-          >
-            {socialLink.svg}
-            </LinkItem>
+            className={`footer__social-link footer__social-link--${socialLink.iconType}`}
+            href={socialLink.href}>
+              <SocialIcon iconType={socialLink.iconType} />
+          </LinkItem>
         )}
         </div>
       </div>
