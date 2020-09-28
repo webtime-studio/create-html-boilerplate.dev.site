@@ -8,6 +8,9 @@ module.exports = {
   organizationName: "webtime-studio",
   projectName: "create-html-boilerplate",
   themeConfig: {
+    colorMode: {
+      disableSwitch: true,
+    },
     navbar: {
       title: "Create HTML Boilerplate",
       logo: {

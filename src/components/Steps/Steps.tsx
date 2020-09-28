@@ -3,10 +3,11 @@ import StepItem from "../StepItem"
 import Buttons from "../Buttons";
 import { steps, Step } from "../../site-data/steps";
 import "./steps.scss";
+import useBaseUrl from '@docusaurus/useBaseUrl';
 
 const Steps: React.FC = () => (
         <section className="steps">
-          <div className="container steps__content-wrapper">
+          <div className="steps__content-wrapper">
             <h2 className="steps__title">3 простых шага и все готово!</h2>
 
             <div className="steps__description">
@@ -24,7 +25,10 @@ const Steps: React.FC = () => (
               }
               </ul>
               <div className="steps__image-wrapper">
-                <img src="/img/gif/html-app-boilerplate.gif" className="steps__image" alt="Как пользоваться сборкой на ГитХабе" />
+                <img
+                  className="steps__image"
+                  src={useBaseUrl('img/gif/html-app-boilerplate.gif')}
+                  alt="Как пользоваться сборкой на ГитХабе" />
               </div>
             </div>
 
