@@ -5,7 +5,7 @@ import {
 
 
 interface SocialIconType {
-  iconType: string;
+  iconType: 'github' | 'linkedin' | 'facebook' | 'youtube';
 };
 
 const SocialIcon: React.FC<SocialIconType> = ({ iconType }) => (
