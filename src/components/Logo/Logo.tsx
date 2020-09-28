@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from '@docusaurus/Link';
 import useBaseUrl from '@docusaurus/useBaseUrl';
+import './logo.scss';
 
 const Logo: React.FC = () => (
   <Link to="/" className="logo">
