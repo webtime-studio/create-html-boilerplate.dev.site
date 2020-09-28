@@ -5,17 +5,16 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 import './link-item.scss';
 
 interface LinkItemProps {
-  label: string,
-  linkClass: string,
+  className: string | null,
   to: string | null,
   href: string | null,
-  svg: React.ReactNode | null,
+  children: string | React.ReactNode,
 }
 
-const LinkItem: React.FC<LinkItemProps> = ({to, href, label, linkClass, svg}) => {
+const LinkItem: React.FC<LinkItemProps> = ({className, to, href, children}) => {
 const toUrl = useBaseUrl(to);
   return (
-    <Link className={clsx("linkItemClass", linkClass)}
+    <Link className={clsx("link-item", className)}
       {...(href
         ? {
           target: '_blank',
@@ -26,8 +25,7 @@ const toUrl = useBaseUrl(to);
           to: toUrl,
       })
       }>
-      {label}
-      {svg}
+      {children}
     </Link>
   );
 }

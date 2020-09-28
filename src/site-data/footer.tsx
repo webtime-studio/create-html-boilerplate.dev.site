@@ -2,7 +2,6 @@ import React from 'react';
 
 export interface FooterMenuLink {
   label: string,
-  class: string,
   to: string | null,
   href: string | null,
 }
@@ -10,34 +9,28 @@ export interface FooterMenuLink {
 export const footerMenuLinks: Array<FooterMenuLink> = [
   {
     label: "Документация",
-    linkClass: "footer__menu-link",
     to: "docs/",
   },
   {
     label: "Блог",
-    linkClass: "footer__menu-link",
     to: "blog",
   },
   {
     label: "MIT License",
-    linkClass: "footer__menu-link",
     href: "#",
   },
   {
     label: "Скачать",
-    linkClass: "footer__menu-link",
     href: "#",
   },
   {
     label: "GitHub",
-    linkClass: "footer__menu-link",
     href: "https://github.com/webtime-studio/create-html-boilerplate",
   },
 ];
 
 export interface FooterSocialLink {
-  label: string,
-  linkClass: string,
+  className: string,
   href: string,
   svg: React.ReactNode,
 }
@@ -76,26 +69,22 @@ const SocialSVG = {
 
 export const footerSocialLinks: Array<FooterSocialLink> = [
   {
-    label: "",
-    linkClass: "footer__social-link footer__social-link--github",
+    className: "github",
     href: "https://github.com/webtime-studio",
     svg: SocialSVG.GITHUB,
   },
   {
-    label: "",
-    linkClass: "footer__social-link footer__social-link--linkedin",
+    className: "linkedin",
     href: "https://www.linkedin.com/company/webtimestudio/",
     svg: SocialSVG.LINKEDIN,
   },
   {
-    label: "",
-    linkClass: "footer__social-link footer__social-link--facebook",
+    className: "facebook",
     href: "https://www.facebook.com/webtime.studio",
     svg: SocialSVG.FACEBOOK,
   },
   {
-    label: "",
-    linkClass: "footer__social-link footer__social-link--youtube",
+    className: "youtube",
     href: "https://www.youtube.com/channel/UC4K70b3dzAgCrO1JuP2aJXw",
     svg: SocialSVG.YOUTUBE,
   },

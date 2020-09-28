@@ -15,14 +15,20 @@ const Footer: React.FC = () => (
           linkItem: FooterMenuLink,
           index: number,
         ) => (
-          <li key={index}>
-            <LinkItem {...linkItem} />
+          <li className="footer__menu-item" key={index}>
+              <LinkItem
+                className="footer__menu-link"
+                to={linkItem.to}
+                href={linkItem.href}
+              >
+                {linkItem.label}
+              </LinkItem>
           </li>)
         )}
       </ul>
 
       <div className="footer__info-block">
-        <p className="footer__copyright">Разработано © 2020,
+        <p className="footer__copyright">© 2020 Разработано,
             <a className="footer__webtime-studio-link" href="https://webtime.studio/" target="_blank" rel="noopener noreferrer"
             lang="en">Webtime.Studio</a>.
             Хостинг предоставлен
@@ -33,7 +39,13 @@ const Footer: React.FC = () => (
         {footerSocialLinks.map((
           socialLink: FooterSocialLink,
           index: number,
-          ) => <LinkItem {...socialLink} />
+        ) => <LinkItem
+            key={index}
+            className={`footer__social-link footer__social-link--${socialLink.className}`}
+            href={socialLink.href}
+          >
+            {socialLink.svg}
+            </LinkItem>
         )}
         </div>
       </div>
