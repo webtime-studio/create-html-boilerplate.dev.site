@@ -10,8 +10,13 @@ export const steps: Array<Step> = [
     title: "Шаг 1.",
     description: (
       <>
-        Зайдите в <a href="https://github.com/webtime-studio" className="steps__github-link" target="_blank"
-          rel="noopener noreferrer"> наш репозиторий на <span lang="en">GitHub</span></a> и нажмите на кнопку &quot;<span lang="en">Use this template</span>&quot;.
+        Зайдите в
+        <a
+          href="https://github.com/webtime-studio"
+          className="steps__github-link"
+          target="_blank"
+          rel="noopener noreferrer"> наш репозиторий на <span lang="en">GitHub</span>
+        </a> и нажмите на кнопку &quot;<span lang="en">Use this template</span>&quot;.
       </>
     ),
   },
@@ -27,8 +32,8 @@ export const steps: Array<Step> = [
     title: "Шаг 3.",
     description: (
       <>
-      Не хотите создавать свой проект на <span lang="en">GitHub</span>?<br />
-      Тогда вы можете просто скачать архив сборки с нашего сайта:
+        Не хотите создавать свой проект на <span lang="en">GitHub</span>?<br />
+        Тогда вы можете просто скачать архив сборки с нашего сайта:
       </>
     ),
   },

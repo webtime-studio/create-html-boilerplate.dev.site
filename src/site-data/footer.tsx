@@ -1,5 +1,3 @@
-import React from 'react';
-
 export interface FooterMenuLink {
   label: string,
   to: string | null,
@@ -32,7 +30,7 @@ export const footerMenuLinks: Array<FooterMenuLink> = [
 export interface FooterSocialLink {
   iconType: string,
   href: string,
-};
+}
 
 export const footerSocialLinks: Array<FooterSocialLink> = [
   {

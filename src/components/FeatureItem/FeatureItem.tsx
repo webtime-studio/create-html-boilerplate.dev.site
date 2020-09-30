@@ -1,5 +1,4 @@
 import React from "react";
-import { features } from "../../site-data/features";
 import "./feature-item.scss";
 
 interface FeatureItemProps {
@@ -8,10 +7,10 @@ interface FeatureItemProps {
 }
 
 const FeatureItem: React.FC<FeatureItemProps> = ({ title, children }) => (
-    <li className="features__item">
-      <h3 className="features__item-title">{title}</h3>
-      <p className="features__item-description">{children}</p>
-    </li>
-  );
+  <li className="features__item">
+    <h3 className="features__item-title">{title}</h3>
+    <p className="features__item-description">{children}</p>
+  </li>
+);
 
 export default FeatureItem;
