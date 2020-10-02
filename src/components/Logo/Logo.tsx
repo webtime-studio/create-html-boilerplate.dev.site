@@ -1,6 +1,5 @@
 import React from 'react';
 import Link from '@docusaurus/Link';
-import useBaseUrl from '@docusaurus/useBaseUrl';
 import './logo.scss';
 
 const Logo: React.FC = () => (
@@ -10,6 +9,6 @@ const Logo: React.FC = () => (
       <span className="logo__version">v1.0.1</span>
     </p>
   </Link>
-)
+);
 
 export default Logo;

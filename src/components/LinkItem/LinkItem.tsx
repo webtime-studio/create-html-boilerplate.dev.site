@@ -11,23 +11,26 @@ interface LinkItemProps {
   children: string | React.ReactNode,
 }
 
-const LinkItem: React.FC<LinkItemProps> = ({className, to, href, children}) => {
-const toUrl = useBaseUrl(to);
+const LinkItem: React.FC<LinkItemProps> = ({
+  className, to, href, children,
+}) => {
+  const toUrl = useBaseUrl(to);
   return (
-    <Link className={clsx("link-item", className)}
+    <Link
+      className={clsx("link-item", className)}
       {...(href
         ? {
           target: '_blank',
           rel: 'noopener noreferrer',
           href,
-          }
+        }
         : {
           to: toUrl,
-      })
+        })
       }>
       {children}
     </Link>
   );
-}
+};
 
 export default LinkItem;

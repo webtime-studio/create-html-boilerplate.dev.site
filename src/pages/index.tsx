@@ -3,7 +3,7 @@ import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import Layout from "@theme/Layout";
 import { Features, Header, Steps } from "../components";
 
-function IndexPage() {
+const IndexPage: React.FC = () => {
   const context = useDocusaurusContext();
   const { siteConfig = {} } = context;
   return (
@@ -18,6 +18,6 @@ function IndexPage() {
       </main>
     </Layout>
   );
-}
+};
 
 export default IndexPage;

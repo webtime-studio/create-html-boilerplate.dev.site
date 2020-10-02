@@ -13,7 +13,7 @@ const Header: React.FC = () => {
         <h1 className="header__title">{siteConfig.title}</h1>
         <p className="header__slogan">{siteConfig.tagline}</p>
         <div className="header__buttons">
-          <Buttons left={'button--border-white header__button'} right={'button--background-white header__button'} />
+          <Buttons left="button--border-white header__button" right="button--background-white header__button" />
         </div>
       </div>
     </header>
