@@ -1,4 +1,5 @@
 .footer {
+  padding: 0;
   color: var(--white);
   background-color: var(--black);
 }
@@ -77,6 +78,7 @@
 }
 
 .footer__copyright {
+  margin: 0;
   width: 230px;
   font-size: 12px;
   font-weight: 300;
