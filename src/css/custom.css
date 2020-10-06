@@ -73,3 +73,22 @@ body {
   font-weight: 400;
   line-height: 24px;
 }
+
+button.menu__button {
+  display: block;
+  height: 55px;
+  width: 55px;
+  min-width: 0;
+  box-shadow: 0px 5px 5px -3px rgba(0, 0, 0, 0.2),
+    0px 8px 10px 1px rgba(0, 0, 0, 0.14),
+    0px 3px 14px 2px rgba(0, 0, 0, 0.12);
+  background-size: 40%;
+  background-image: url("/img/svg/list.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-color: var(--orange);
+}
+
+button.menu__button svg {
+  display: none;
+}
