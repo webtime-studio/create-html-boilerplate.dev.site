@@ -74,6 +74,11 @@ body {
   line-height: 24px;
 }
 
+button.menu__button svg,
+button.menu__button span {
+  display: none;
+}
+
 button.menu__button {
   display: block;
   height: 55px;
@@ -89,6 +94,8 @@ button.menu__button {
   background-color: var(--orange);
 }
 
-button.menu__button svg {
-  display: none;
+button.menu__button[aria-label="Close Menu"] {
+  background-size: 45%;
+  background-image: url("/img/svg/plus.svg");
+  transform: rotate(45deg);
 }
