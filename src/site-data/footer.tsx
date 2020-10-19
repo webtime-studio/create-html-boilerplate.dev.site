@@ -1,7 +1,9 @@
+import {IconType} from "../components/SocialIcon/SocialIcon";
+
 export interface FooterMenuLink {
   label: string,
-  to: string | null,
-  href: string | null,
+  to?: string | null,
+  href?: string | null,
 }
 
 export const footerMenuLinks: Array<FooterMenuLink> = [
@@ -28,7 +30,7 @@ export const footerMenuLinks: Array<FooterMenuLink> = [
 ];
 
 export interface FooterSocialLink {
-  iconType: string,
+  iconType: IconType,
   href: string,
 }
 

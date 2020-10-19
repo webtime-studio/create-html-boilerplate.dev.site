@@ -3,16 +3,18 @@ import {
   YouTubeIcon, FacebookIcon, GitHubIcon, LinkedinIcon,
 } from '../icons';
 
-interface SocialIconType {
-  iconType: 'github' | 'linkedin' | 'facebook' | 'youtube';
+export type IconType = 'github' | 'linkedin' | 'facebook' | 'youtube';
+
+export interface SocialIconType {
+  iconType: IconType;
 }
 
-const SocialIcon: React.FC<SocialIconType> = ({ iconType }) => (
+const SocialIcon: React.FC<SocialIconType> = ({iconType}) => (
   <>
-    { iconType === 'github' ? <GitHubIcon /> : null}
-    { iconType === 'linkedin' ? <LinkedinIcon /> : null}
-    { iconType === 'facebook' ? <FacebookIcon /> : null}
-    { iconType === 'youtube' ? <YouTubeIcon /> : null}
+    {iconType === 'github' ? <GitHubIcon/> : null}
+    {iconType === 'linkedin' ? <LinkedinIcon/> : null}
+    {iconType === 'facebook' ? <FacebookIcon/> : null}
+    {iconType === 'youtube' ? <YouTubeIcon/> : null}
   </>
 );
 

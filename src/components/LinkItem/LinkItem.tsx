@@ -6,8 +6,8 @@ import './link-item.scss';
 
 interface LinkItemProps {
   className: string | null,
-  to: string | null,
-  href: string | null,
+  to?: string | null,
+  href?: string | null,
   children: string | React.ReactNode,
 }
 
