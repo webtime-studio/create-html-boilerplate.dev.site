@@ -22,7 +22,7 @@
     "@tsconfig/docusaurus": "^1.0.2",
     "@types/react": "^16.9.53",
     "@types/react-helmet": "^6.1.0",
-    "@types/react-router-dom": "^5.1.5",
+    "@types/react-router-dom": "^5.1.6",
     "clsx": "^1.1.1",
     "docusaurus-plugin-sass": "^0.1.10",
     "react": "^16.14.0",
