@@ -17,20 +17,23 @@ const Footer: React.FC = () => (
           linkItem: FooterMenuLink,
           index: number,
         ) => (
-          <li className="footer__menu-item" key={index}>
-            <LinkItem
-              className="footer__menu-link"
-              to={linkItem.to}
-              href={linkItem.href}
+          <>
+            <li className="footer__menu-item" key={index}>
+              <LinkItem
+                className="footer__menu-link"
+                to={linkItem.to}
+                href={linkItem.href}
               >
-              {linkItem.label}
-            </LinkItem>
-          </li>
+                {linkItem.label}
+              </LinkItem>
+            </li>
+            <br />
+          </>
         ))}
       </ul>
 
       <div className="footer__info-block">
-        <p className="footer__copyright">© 2020 Разработано,
+        <p className="footer__copyright">© 2020 Разработано,&nbsp;
           <a
             className="footer__webtime-studio-link"
             href="https://webtime.studio/"
@@ -38,7 +41,8 @@ const Footer: React.FC = () => (
             rel="noopener noreferrer"
             lang="en">Webtime.Studio
           </a>.
-          Хостинг предоставлен
+          <br />
+          Хостинг предоставлен&nbsp;
           <a
             className="footer__netlify-link"
             href="https://www.netlify.com/"
