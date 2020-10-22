@@ -39,16 +39,16 @@
   padding: 44px;
 
   @media (min-width: 1260px) {
-    column-count: 2;
-    column-width: auto;
-    column-gap: 30px;
     width: 350px;
     padding: 0;
+    column-count: 2;
+    column-width: auto;
     column-gap: 50px;
   }
 }
 
 .footer__menu-item {
+  display: inline-block;
   padding: 9px 0;
 }
 
@@ -79,9 +79,9 @@
 
 .footer__copyright {
   margin: 0;
+  margin-top: 9px;
   width: 230px;
   font-size: 12px;
-  font-weight: 300;
   line-height: 20px;
   text-align: center;
 }
@@ -104,7 +104,7 @@
   display: flex;
   justify-content: center;
   margin: 0 auto;
-  padding: 9px 0;
+  padding: 20px 0 9px 0;
 }
 
 .footer__social-link {
