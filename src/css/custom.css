@@ -96,6 +96,5 @@ button.menu__button {
 
 button.menu__button[aria-label="Close Menu"] {
   background-size: 45%;
-  background-image: url("/img/svg/plus.svg");
-  transform: rotate(45deg);
+  background-image: url("/img/svg/cross.svg");
 }
