@@ -15,18 +15,18 @@
     "eslint.ts": "eslint --config .eslintrc-ts.yml --ext .ts --ext .tsx src/"
   },
   "dependencies": {
-    "@docusaurus/core": "^2.0.0-alpha.66",
-    "@docusaurus/module-type-aliases": "^2.0.0-alpha.51",
-    "@docusaurus/preset-classic": "2.0.0-alpha.66",
-    "@mdx-js/react": "^1.5.8",
+    "@docusaurus/core": "^2.0.0-alpha.70",
+    "@docusaurus/module-type-aliases": "^2.0.0-alpha.70",
+    "@docusaurus/preset-classic": "2.0.0-alpha.70",
+    "@mdx-js/react": "^1.6.22",
     "@tsconfig/docusaurus": "^1.0.2",
-    "@types/react": "^16.9.53",
+    "@types/react": "^17.0.0",
     "@types/react-helmet": "^6.1.0",
     "@types/react-router-dom": "^5.1.6",
     "clsx": "^1.1.1",
-    "docusaurus-plugin-sass": "^0.1.10",
-    "react": "^16.14.0",
-    "react-dom": "^16.14.0"
+    "docusaurus-plugin-sass": "^0.1.11",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
   },
   "browserslist": {
     "production": [
@@ -41,15 +41,15 @@
     ]
   },
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^4.3.0",
-    "@typescript-eslint/parser": "^4.3.0",
+    "@typescript-eslint/eslint-plugin": "^4.11.0",
+    "@typescript-eslint/parser": "^4.11.0",
     "babel-plugin-macros": "^2.8.0",
-    "babel-plugin-styled-components": "^1.11.1",
-    "eslint": "^7.10.0",
-    "eslint-config-airbnb-typescript": "^11.0.0",
+    "babel-plugin-styled-components": "^1.12.0",
+    "eslint": "^7.16.0",
+    "eslint-config-airbnb-typescript": "^12.0.0",
     "eslint-plugin-import": "^2.22.1",
-    "eslint-plugin-jsx-a11y": "^6.3.1",
-    "eslint-plugin-react": "^7.21.2",
-    "typescript": "^4.0.3"
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-react": "^7.21.5",
+    "typescript": "^4.1.3"
   }
 }
