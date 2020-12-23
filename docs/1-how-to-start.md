@@ -1,7 +1,7 @@
 ---
-id: 1-how-to-start title: Быстрый старт
-sidebar_label: Быстрый старт
-slug: /how-to-start
+title: "Быстрый старт"
+sidebar_label: "Быстрый старт"
+slug: /1-how-to-start
 ---
 
 Create HTML Boilerplate это отличный инструмент для старта вашего сайта или веб-приложения. Всё что вам нужно для
