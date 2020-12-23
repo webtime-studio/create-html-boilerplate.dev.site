@@ -2,7 +2,7 @@ import React from "react";
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import StepItem from "../StepItem";
 import Buttons from "../Buttons";
-import { steps, Step } from "../../site-data/steps";
+import {steps, Step} from "../../site-data/steps";
 import "./steps.scss";
 
 const Steps: React.FC = () => (
@@ -16,7 +16,7 @@ const Steps: React.FC = () => (
             step: Step,
             index: number,
           ) => {
-            const { title, description } = step;
+            const {title, description} = step;
             return (
               <StepItem key={index} title={title}>
                 {description}
@@ -28,21 +28,21 @@ const Steps: React.FC = () => (
           <img
             className="steps__image"
             src={useBaseUrl('img/gif/html-app-boilerplate.gif')}
-            alt="Как пользоваться сборкой на ГитХабе" />
+            alt="Как пользоваться сборкой на ГитХабе"/>
         </div>
       </div>
 
-      <p className="steps__text">Не хотите создавать свой проект на <span lang="en">GitHub</span>?<br />
+      <p className="steps__text">Не хотите создавать свой проект на <span lang="en">GitHub</span>?<br/>
         Тогда вы можете просто скачать архив сборки с нашего сайта:
       </p>
-      <a className="steps__download-link" href="#" download>
+      <a className="steps__download-link"
+         href="https://github.com/webtime-studio/create-html-boilerplate/releases" target="_blank"
+         rel="noopener noreferrer">
         <span className="steps__download-text">Скачать последний релиз</span>
       </a>
-
       <div className="steps__buttons">
-        <Buttons left="button--border-orange steps__button" right="button--background-orange steps__button" />
+        <Buttons left="button--border-orange steps__button" right="button--background-orange steps__button"/>
       </div>
-
     </div>
   </section>
 );
