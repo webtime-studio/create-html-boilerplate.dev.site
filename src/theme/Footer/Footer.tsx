@@ -33,7 +33,7 @@ const Footer: React.FC = () => (
       </ul>
 
       <div className="footer__info-block">
-        <p className="footer__copyright">© 2020 Разработано,&nbsp;
+        <p className="footer__copyright">© {new Date().getFullYear()} Разработано в{' '}
           <a
             className="footer__webtime-studio-link"
             href="https://webtime.studio/"

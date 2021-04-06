@@ -15,13 +15,13 @@ export const footerMenuLinks: Array<FooterMenuLink> = [
     label: "Блог",
     to: "blog",
   },
-  {
-    label: "MIT License",
-    href: "#",
-  },
+  // {
+  //   label: "MIT License",
+  //   href: "#",
+  // },
   {
     label: "Скачать",
-    href: "#",
+    href: "https://github.com/webtime-studio/create-html-boilerplate/releases",
   },
   {
     label: "GitHub",
