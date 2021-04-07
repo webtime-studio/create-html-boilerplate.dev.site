@@ -1,12 +1,22 @@
 module.exports = {
   someSidebar: {
     'Добро пожаловать': [
-      "0-welcome"
+      "welcome"
     ],
     'С чего начать': [
-      "1-how-to-start",
-      // "doc1"
+      "how-to-start",
+      "folder-structure",
+      // "4-available-scripts",
+      // "5-supported-browsers-and-features",
+      // "6-updating-to-new-releases"
     ],
-    // Features: ["mdx"],
+    'Работа со стилями': [
+      // "1-how-to-start",
+      // "2-getting-started",
+      // "3-folder-structure",
+      // "4-available-scripts",
+      // "5-supported-browsers-and-features",
+      // "6-updating-to-new-releases"
+    ],
   },
 };

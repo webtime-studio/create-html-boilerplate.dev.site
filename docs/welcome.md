@@ -1,5 +1,5 @@
 ---
-id: 0-welcome
+id: welcome
 title: О документации
 sidebar_label: О документации
 slug: /
