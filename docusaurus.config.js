@@ -10,6 +10,8 @@ module.exports = {
   themeConfig: {
     colorMode: {
       disableSwitch: true,
+      respectPrefersColorScheme: false,
+      defaultMode: "light",
     },
     navbar: {
       title: "Create HTML Boilerplate",

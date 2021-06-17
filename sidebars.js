@@ -6,7 +6,7 @@ module.exports = {
     'С чего начать': [
       "how-to-start",
       "folder-structure",
-      // "4-available-scripts",
+      "available-scripts",
       // "5-supported-browsers-and-features",
       // "6-updating-to-new-releases"
     ],
