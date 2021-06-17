@@ -12,7 +12,7 @@ slug: /available-scripts
 
 ## `npm test / yarn test`
 
-Запускает проверку [CSS стилей](/docs/available-scripts#npm-stylelint--yarn-stylelint) и [JS скриптов](/available-scripts#npm-eslint--yarn-eslint)
+Запускает проверку [CSS стилей](#npm-stylelint--yarn-stylelint) и [JS скриптов](#npm-eslint--yarn-eslint)
 на соответствие правилам в проекте.
 
 ## `npm run build / yarn build`
