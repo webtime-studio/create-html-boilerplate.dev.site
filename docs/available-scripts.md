@@ -15,7 +15,7 @@ slug: /available-scripts
 Запускает проверку [CSS стилей](/docs/available-scripts#npm-stylelint--yarn-stylelint) и [JS скриптов](/available-scripts#npm-eslint--yarn-eslint)
 на соответствие правилам в проекте.
 
-## `npm run build`
+## `npm run build / yarn build`
 
 Запускает сборку и оптимизацию для максимальной производительности, сохраняет результат в папку `build`. Ваше приложение готово к размещению на хостинге!
 
