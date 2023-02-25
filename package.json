@@ -14,6 +14,18 @@
     "eslint.js": "eslint --ext .jsx --ext .js src/",
     "eslint.ts": "eslint --config .eslintrc-ts.yml --ext .ts --ext .tsx src/"
   },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
   "dependencies": {
     "@docusaurus/core": "^2.0.0-beta.21",
     "@docusaurus/module-type-aliases": "^2.0.0-beta.21",
@@ -27,19 +39,7 @@
     "docusaurus-plugin-sass": "^0.2.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "sass": "^1.53.0"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+    "sass": "^1.58.3"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.30.3",
